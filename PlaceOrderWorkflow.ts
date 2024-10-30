@@ -35,9 +35,7 @@ type AddressValidationError = {};
 
 type CheckedAddress = {};
 
-type CheckAddressExists = (
-  address: UnvalidatedAddress
-) => Promise<CheckedAddress | AddressValidationError>;
+type CheckAddressExists = (address: UnvalidatedAddress) => CheckedAddress;
 
 type ValidateOrder = (
   checkProductExists: CheckProductExists

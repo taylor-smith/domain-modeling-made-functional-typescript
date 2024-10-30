@@ -11,12 +11,17 @@ export type UnvalidatedOrder = {
 export type UnvalidatedCustomer = {
   firstName: string;
   lastName: string;
-  email: string;
+  emailAddress: string;
 };
 
 export type Customer = {};
 
-type UnvalidatedAddress = {
+export type PersonalName = {
+  firstName: string;
+  lastName: string;
+};
+
+export type UnvalidatedAddress = {
   street1: string;
   street2: string;
   city: string;
